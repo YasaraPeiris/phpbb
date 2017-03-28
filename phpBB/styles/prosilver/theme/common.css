@@ -157,6 +157,8 @@ a:hover {
 	}
 }
 
+
+
 .page-body {
 	clear: both;
 	margin: 4px 0;
@@ -593,6 +595,49 @@ a.header-avatar span:after {
 	display: none !important;
 }
 
+/* Smiley Dropdown
+----------------------------------------*/
+
+.dropdown .smiley-content{
+    display: inline-block;
+    width:200px;
+    z-index: 2;
+    overflow: hidden;
+    overflow-y: auto;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    max-height: 300px;
+}
+
+
+
+.smiley-box ul{
+    display: inline;
+    margin:0;
+}
+
+.smiley-box .smiley-list{
+	display: inline-block;
+	border:none;
+}
+
+.smiley-box .smiley-list a{
+    padding:0;
+    text-decoration:none;
+}
+
+/*Smiley Dropdown menu
+----------------------------------------*/
+.dropdown-container.smiley-container {
+	position:absolute;
+	right:0;
+	top:5px;
+	cursor:pointer;
+	margin-right:-18px;
+}
+
 /* Responsive breadcrumbs
 ---------------------------------------- */
 .breadcrumbs .crumb {
@@ -991,6 +1036,10 @@ fieldset.fields1 dl.pmlist dd.recipients {
 		top: 25px;
 	}
 }
+
+
+
+
 
 .phpbb_alert .alert_close {
 	float: right;
