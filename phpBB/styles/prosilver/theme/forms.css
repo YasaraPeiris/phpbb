@@ -257,28 +257,34 @@ fieldset.submit-buttons input {
 	vertical-align: middle;
 }
 
-/* Main message box */
+/* Main message box - Edited to add smiley dropdown */
 .message-box {
-	width: 80%;
+	width:98%;
+	position:relative;
 }
 
 .message-box textarea {
-	font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
-	font-size: 1.2em;
-	outline: 3px dashed transparent;
-	outline-offset: -4px;
+	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
 	width: 450px;
+	height: 270px;
+	padding-right:20px;
 	min-width: 100%;
 	max-width: 100%;
-	height: 270px;
+	font-size: 1.2em;
 	resize: vertical;
-	transition: all 0.5s ease;
+	outline: 3px dashed transparent;
+	outline-offset: -4px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
 }
 
 /* Emoticons panel */
 .smiley-box {
 	float: right;
-	width: 18%;
+	width: 100%;
 }
 
 .smiley-box img {

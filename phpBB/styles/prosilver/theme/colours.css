@@ -1395,6 +1395,23 @@ input.disabled {
 	border-color: #dcdcdc;
 }
 
+/*smiley dropbox
+ -----------------------------------------*/
+
+.dropdown .smiley-content {
+	background: #fff;
+	border-color: #B9B9B9;
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.smiley-box .smiley-list{
+	background-color:white;
+}
+
+.smiley-box .smiley-list a{
+    background-color:white;
+}
+
 /* notifications */
 
 .notification_list p.notification-time {
