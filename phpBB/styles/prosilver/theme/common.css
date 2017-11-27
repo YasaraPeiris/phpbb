@@ -934,14 +934,14 @@ fieldset.fields1 dl.pmlist dd.recipients {
 .pagination > ul {
 	display: inline-block;
 	margin-left: 5px;
-	list-style: none !important;
+	list-style: none;
 }
 
 .pagination > ul > li {
 	font-size: 100%;
 	line-height: normal;
 	vertical-align: middle;
-	display: inline-block !important;
+	display: inline-block;
 	padding: 0;
 }
 
@@ -987,7 +987,8 @@ fieldset.fields1 dl.pmlist dd.recipients {
 /* Pagination in viewforum for multipage topics */
 .row .pagination {
 	display: block;
-	margin-top: -12px;
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
 
 .row .pagination > ul {
@@ -1313,7 +1314,9 @@ ul.linklist:after,
 	display: block;
 }
 
-.notification-avatar {
+.notification-avatar,
+.notification-menu .notification-list .notification-item .avatar,
+.notification-menu .notification-list .notification-item .gravatar {
 	float: left;
 	width: auto !important;
 	max-width: 50px;

@@ -13,7 +13,7 @@ ul.topiclist {
 	list-style-type: none;
 }
 
-ul.topiclist li {
+ul.topiclist > li {
 	display: block;
 	margin: 0;
 	list-style-type: none;
@@ -88,6 +88,18 @@ ul.topiclist dfn {
 	padding-top: 5px;
 }
 
+.forum-desc {
+	display: block;
+}
+
+.forum-mods {
+	display: block;
+}
+
+.forum-subs {
+	display: block;
+}
+
 li.row {
 	border-top: 1px solid transparent;
 	border-bottom: 1px solid transparent;
@@ -137,10 +149,13 @@ li.header dl.row-item dt .list-inner {
 }
 
 /* Forum list column styles */
+.row .list-inner { padding: 4px 0; }
+
 dl.row-item {
 	background-repeat: no-repeat;
 	background-position: 10px 50%;		/* Position of folder icon */
 	background-size: 32px;
+	image-rendering: -webkit-optimize-contrast;
 }
 
 dl.row-item dt {
@@ -198,7 +213,7 @@ dl.row-item dt ul {
 	list-style-position: inside;
 }
 
-dl.row-item dt li {
+dl.row-item dt > ul li {
 	display: list-item;
 	list-style-type: inherit;
 }
@@ -519,9 +534,7 @@ blockquote cite > div {
 	font-size: 1em;
 	word-wrap: normal;
 	border: 1px solid transparent;
-	overflow-x: scroll;
 	margin: 1em 0 1.2em;
-	padding: 3px;
 }
 
 .codebox p {
@@ -530,7 +543,8 @@ blockquote cite > div {
 	text-transform: uppercase;
 	border-bottom: 1px solid transparent;
 	display: block;
-	margin-bottom: 3px;
+	margin-bottom: 0;
+	padding: 3px;
 }
 
 blockquote .codebox {
@@ -544,8 +558,7 @@ blockquote .codebox {
 	overflow: auto;
 	height: auto;
 	max-height: 200px;
-	margin: 2px 0;
-	padding-top: 5px;
+	padding: 5px 3px;
 }
 
 /* Attachments
@@ -883,8 +896,8 @@ table.fixed-width-table {
 
 /* Factor out this ID */
 /* stylelint-disable selector-no-id */
-#memberlist tr.inactive,
-#team tr.inactive {
+.memberlist tr.inactive,
+.team tr.inactive {
 	font-style: italic;
 }
 /* stylelint-enable selector-no-id */

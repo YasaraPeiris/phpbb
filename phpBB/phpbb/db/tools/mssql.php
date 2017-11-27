@@ -440,7 +440,7 @@ class mssql extends tools
 			{
 				$result = $this->sql_index_drop($table_name, $index_name);
 				$statements = array_merge($statements, $result);
-				if (sizeof($index_data) > 1)
+				if (count($index_data) > 1)
 				{
 					// Remove this column from the index and recreate it
 					$recreate_indexes[$index_name] = array_diff($index_data, array($column_name));
@@ -524,7 +524,7 @@ class mssql extends tools
 	{
 		$statements = array();
 
-		if ($this->is_sql_server_2000())
+		if ($this->mssql_is_sql_server_2000())
 		{
 			$this->check_index_name_length($table_name, $index_name);
 		}
@@ -541,7 +541,7 @@ class mssql extends tools
 	{
 		$statements = array();
 
-		if ($this->is_sql_server_2000())
+		if ($this->mssql_is_sql_server_2000())
 		{
 			$this->check_index_name_length($table_name, $index_name);
 		}
